@@ -1,5 +1,7 @@
 <template>
   <div>
+    <!-- <h1 v-bind:style="{ textDecoration: decoration }">Hello {{ name }}</h1> -->
+    <!-- Forma reduzida (interpretando como JS): -->
     <h1 :style="{ textDecoration: decoration }">Hello {{ name }}</h1>
     <!-- Qualquer propriedade do HTML pode ser uma prop que vá olhar dentro do meu model -->
      <!-- também posso escrever :style ao inves de v-bind:style -->
@@ -9,7 +11,7 @@
       model, ou seja, quando o app iniciar, o vue vai olhar no data e vai pegar o que tá lá
       e o que tá sendo referenciado na diretiva e vice-versa -->
       <br>
-      <a :href="link">Link para o curso!</a>
+      <a :href="link" target="_blank">Link para o curso!</a>
   </div>
 </template>
 
